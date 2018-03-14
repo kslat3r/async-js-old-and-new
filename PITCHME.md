@@ -15,7 +15,7 @@
 * Generators
 * Async/await
 
----
+---?image=assets/image/cable.jpg
 
 ## Asynchronous programming
 
@@ -27,7 +27,7 @@
 
 ### How is this beneficial?
 
----
+---?image=assets/image/roller-coaster.jpg
 
 ## The Event Loop
 
@@ -53,7 +53,7 @@
 
 ---
 
-### Why are they considered old hat?
+### Why are they considered "old school"?
 
 ---
 
@@ -61,7 +61,7 @@
 
 ---
 
-### When did they first appear
+### When did they first appear?
 
 ---
 
