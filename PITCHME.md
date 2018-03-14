@@ -39,7 +39,7 @@
 
 ### Common misconceptions
 
----
+---?image=assets/image/telephone.jpg
 
 ## Callbacks
 
@@ -55,7 +55,7 @@
 
 ### Why are they considered "old school"?
 
----
+---?image=assets/image/promise.jpg
 
 ## Promises
 
@@ -71,7 +71,7 @@
 
 ### How are they better?
 
----
+---?image=assets/image/generator.jpg
 
 ## Generators
 
@@ -87,7 +87,7 @@
 
 ### What are they good for?
 
----
+---?image=assets/image/wait.jpg
 
 ## Async/await
 
