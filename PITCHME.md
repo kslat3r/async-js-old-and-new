@@ -1,6 +1,8 @@
-# Asynchronous JavaScript - The Old & New
+# Asynchronous JavaScript
 
-## March 20th 2018
+## The Old & New
+
+### March 20th 2018
 
 ---
 
