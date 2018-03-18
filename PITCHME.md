@@ -90,6 +90,25 @@ setTimeout(callback, 10000);
 
 ## The problem
 
+---
+
+### How long will this take to execute from start to finish?
+
+```javascript
+setTimeout(() => console.log(1), 1000);
+setTimeout(() => console.log(2), 2000);
+setTimeout(() => console.log(3), 3000);
+```
+
+---
+
+### 3 seconds
+
+---
+
+* All timers start at near enough the same time
+* But what if we want to start our timers one after another?
+
 ---?image=assets/image/telephone.jpg
 
 ## Solution one - nested callbacks
