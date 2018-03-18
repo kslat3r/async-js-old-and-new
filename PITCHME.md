@@ -103,7 +103,7 @@ setTimeout(callback, 10000);
 * If the call stack is empty:
   * Takes the first event on the callback queue and pushes it to the call stack.
   * The call stack then executes the callback.
-* Performs this repeatedly until the callback queue is empty.
+* Performs this repeatedly until the call stack and callback queue are empty.
 
 ---
 
