@@ -60,7 +60,6 @@ setTimeout(callback, 10000);
 
 ---
 
-* Can enter the stack at any time
 * Non-blocking (does not delay single execution thread)
 * Some functions take an unpredictable amount of time to execute e.g. network requests
 
@@ -77,6 +76,39 @@ setTimeout(callback, 10000);
 ---
 
 ### How does this work?
+
+---
+
+### Three main concepts
+
+* The call stack
+* The callback queue
+* The event loop
+
+---
+
+### The call stack
+
+* Process all synchronous code
+* FIFO
+
+--- 
+
+### The callback queue
+
+* Keeps references to any callbacks that have been created
+* Event based
+
+---
+
+### The Event Loop
+
+* Can only process one piece of code at a time (single threaded)
+* Responsible for two main things:
+  * Processing all items on the call stack
+  * When the call stack is empty, processing all items on the callback queue
+
+![Event loop](assets/image/eventloop.png)
 
 ---?image=assets/image/problem.jpg
 
