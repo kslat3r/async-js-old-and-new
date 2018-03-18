@@ -52,7 +52,7 @@ const high = Math.ceil(random);
 
 ```javascript
 const callback = () => {
-   console.log('Hello, world!');
+  console.log('Hello, world!');
 }
 
 setTimeout(callback, 10000);
@@ -61,7 +61,7 @@ setTimeout(callback, 10000);
 ---
 
 * Can enter the stack at any time
-* Non-blocking (does not block single execution thread)
+* Non-blocking (does not delay single execution thread)
 * Some functions take an unpredictable amount of time to execute e.g. network requests
 
 ---
@@ -142,7 +142,7 @@ setTimeout(() => {
 
 ### Callback hell
 
-![Callback hell]("/image/callbackhell.png")
+![Callback hell](assets/image/callbackhell.png)
 
 ---?image=assets/image/promise.jpg
 
