@@ -8,8 +8,7 @@
 
 ## What we will cover
 
-* Synchronous JavaScript programming
-* The history of asynchronous JavaScript
+* Asynchronous JavaScript and how it works
 * Callbacks
 * Promises
 * Generator functions
@@ -62,7 +61,7 @@ setTimeout(callback, 10000);
 ---
 
 * Can enter the stack at any time
-* Non-blocking (do not block single execution thread)
+* Non-blocking (does not block single execution thread)
 * Some functions take an unpredictable amount of time to execute e.g. network requests
 
 ---
@@ -116,6 +115,34 @@ setTimeout(() => console.log(3), 3000);
 ---?image=assets/image/telephone.jpg
 
 ## Solution one - nested callbacks
+
+---
+
+```javascript
+setTimeout(() => {
+  console.log(1);
+
+  setTimeout(() => {
+    console.log(2);
+
+    setTimeout(() => {
+      console.log(3);
+    }, 3000);
+  }, 2000);
+}, 1000);
+```
+
+---
+
+* Seems simple on the surface, but quickly becomes messy.
+* Hard to read.
+* Hard to maintain.
+
+---
+
+### Callback hell
+
+![Callback hell]("/image/callbackhell.png")
 
 ---?image=assets/image/promise.jpg
 
