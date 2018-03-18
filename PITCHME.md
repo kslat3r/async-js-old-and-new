@@ -43,7 +43,13 @@
 
 ## Callbacks
 
----?code=code/callback-example.js&lang=javascript
+```javascript
+const callback = () => {
+  console.log('Hello, world!');
+};
+
+setTimeout(callback, 10000);
+```
 
 ---
 
