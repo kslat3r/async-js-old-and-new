@@ -313,6 +313,8 @@ Note:
 Mention how in the real world this wouldn't work without co() as yield has to be within a generator function
 TJ Holowaychuk
 
+Good use case for this is paging
+
 ---
 
 ```javascript
