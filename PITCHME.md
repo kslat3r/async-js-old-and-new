@@ -61,9 +61,9 @@ setTimeout(callback, 10000);
 
 ---
 
-* Some functions take an unpredictable amount of time to execute e.g. network requests
 * Can enter the stack at any time
 * Non-blocking (do not block single execution thread)
+* Some functions take an unpredictable amount of time to execute e.g. network requests
 
 ---
 
@@ -80,6 +80,8 @@ setTimeout(callback, 10000);
 ### How does this work?
 
 ---
+
+### Another analogy
 
 * Imagine the bad friend you invite to your party: you can’t rely them to show up on time, so you start the party without them.
 * But what if your friend is bringing the drinks? We might have to wait!
