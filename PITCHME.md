@@ -45,7 +45,7 @@ const high = Math.ceil(random);
 
 Note:
 
-* * Usually takes around 10 microseconds to execute
+* Usually takes around 10 microseconds to execute
 
 ---
 
