@@ -6,7 +6,7 @@
 
 ---
 
-## What we will uncover
+## What we will cover
 
 * Synchronous JavaScript programming
 * The history of asynchronous JavaScript
@@ -23,8 +23,8 @@
 
 ```javascript
 const random = Math.random();
-const low = Math.floor(random);
-const high = Math.ceil(random);
+const low = Math.floor(random); // waits for line 1 to return
+const high = Math.ceil(random); // waits for line 2 to return
 ```
 
 ---
@@ -33,6 +33,7 @@ const high = Math.ceil(random);
 * Executed immediately by the event loop
 * Blocking functions (JavaScript is single threaded)
 * Default behaviour
+* Happens very quickly on modern hardware
 
 ---
 
@@ -41,6 +42,16 @@ const high = Math.ceil(random);
 ---?image=assets/image/cable.jpg
 
 ## Asynchronous functions
+
+---
+
+```javascript
+const callback = () => {
+   console.log('Hello, world!');
+}
+
+setTimeout(callback, 10000);
+```
 
 ---?image=assets/image/problem.jpg
 
