@@ -410,7 +410,7 @@ timer();
 * Part of the ES2017 specification
 * First available in Node.js v7.6
 * Supported by all major browsers **excluding** Internet Explorer Edge
-* * **Syntactical sugar**
+* **Syntactical sugar**
 
 ---?image=assets/image/information.jpg
 
