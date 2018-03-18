@@ -148,6 +148,33 @@ setTimeout(() => {
 
 ## Solution two - promises
 
+---
+
+```javascript
+const timeout = (ms) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    });
+  });
+});
+
+timeout(1000)
+  .then(() => {
+    console.log(1);
+
+    return timeout(2000);
+  })
+  .then(() => {
+    console.log(2);
+
+    return timeout(3000);
+  })
+  .then(() => {
+    console.log(3);
+  });
+```
+
 ---?image=assets/image/generator.jpg
 
 ## Solution three - generator functions
