@@ -43,9 +43,9 @@
 
 ## Callbacks
 
----
+---?code=code/callback-example.js&lang=javascript&title=Simple callback example
 
----?code=code/callback-example.js&lang=javascript&title=Callback example
+---
 
 ### When did they first appear?
 
