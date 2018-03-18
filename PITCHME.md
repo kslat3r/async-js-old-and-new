@@ -22,13 +22,7 @@
 
 ```javascript
 const random = Math.random();
-
-// waits for line 1 to return
-
 const low = Math.floor(random);
-
-// waits for line 2 to return
-
 const high = Math.ceil(random);
 ```
 
