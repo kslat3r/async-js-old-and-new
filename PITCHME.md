@@ -24,7 +24,7 @@
 ```javascript
 const random = Math.random();
 const low = Math.floor(random);
-const ceil = Math.ceil(random);
+const high = Math.ceil(random);
 ```
 
 ---
@@ -36,7 +36,7 @@ const ceil = Math.ceil(random);
 
 ---
 
-> Scenario: You are in a queue to get a movie ticket. You cannot get one until everybody in front of you > gets one, and the same applies to the people queued behind you. - [Stack Overflow](https://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean/26804844#26804844)
+> Scenario: You are in a queue to get a movie ticket. You cannot get one until everybody in front of you gets one, and the same applies to the people queued behind you. - [Stack Overflow](https://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean/26804844#26804844)
 
 ---?image=assets/image/cable.jpg
 
