@@ -89,24 +89,27 @@ setTimeout(callback, 10000);
 
 ### The call stack
 
-* Process all synchronous code
-* FIFO
+* Executes code
+* Can only execute one piece of code at a time (single threaded)
+* Records where we are in our program
+* If we step into a function, we push something onto the stack. If we return from a function, we pop off the top of the stack.
 
 --- 
 
 ### The callback queue
 
-* Keeps references to any callbacks that have been created
-* Event based
+* Keeps references to any callbacks that need to be processed
+* Event based - callbacks are added when actions complete
 
 ---
 
 ### The Event Loop
 
-* Can only process one piece of code at a time (single threaded)
-* Responsible for two main things:
-  * Processing all items on the call stack
-  * When the call stack is empty, processing all items on the callback queue
+* One simple job - to monitor the call stack and the callback queue.
+* If the call stack is empty:
+  * Takes the first event on the callback queue and pushes it to the call stack.
+  * The call stack then executes the callback.
+* Performs this repeatedly until the callback queue is empty.
 
 ---
 
@@ -348,5 +351,7 @@ timer();
 
 ## More information
 
+* [Event loop explaination](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
+* [Event loop demonstration](http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D)
 * [JavaScript: The Good Parts by Douglas Crockford](https://www.amazon.co.uk/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?ie=UTF8&qid=1521391685&sr=8-1&keywords=douglas+crockford)
 * https://gitpitch.com/kslat3r/async-js-old-and-new
