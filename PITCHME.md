@@ -6,142 +6,43 @@
 
 ---
 
-## Agenda
+## What we will uncover
 
-* Asynchronous programming
-* The event loop
+* Synchronous JavaScript programming
+* The history of asynchronous JavaScript
 * Callbacks
 * Promises
-* Generators
+* Generator functions
 * Async/await
+
+---?image=assets/image/queue.jpg
+
+## Synchronous functions
 
 ---?image=assets/image/cable.jpg
 
-## Asynchronous programming
+## Asynchronous functions
 
----
+---?image=assets/image/problem.jpg
 
-### In the context of JavaScript
-
----
-
-### How is this beneficial?
-
----?image=assets/image/roller-coaster.jpg
-
-## The Event Loop
-
----
-
-### What is libuv?
-
----
-
-### Common misconceptions
+## The problem
 
 ---?image=assets/image/telephone.jpg
 
-## Callbacks
-
----
-
-### Simple example
-
-```javascript
-const callback = () => {
-  console.log('Hello, world!');
-};
-
-setTimeout(callback, 10000);
-```
-
----
-
-### Node.js example
-
-```javascript
-fs.readFile('/tmp/foo.txt', (err, data) => {
-  if (err) {
-    throw err;
-  }
-
-  console.log(data);
-});
-```
-
----
-
-### Loopback example
-
-```javascript
-module.exports = (Model) => {
-  Model.helloWorld = (callback) => {
-    return callback(null, 'Hello, world!');
-  };
-
-  Model.remoteMethod('helloWorld', {
-    returns: {
-      arg: 'message',
-      type: 'string'
-    }
-  });
-};
-```
-
----
-
-### When did they first appear?
-
----
-
-### How are they executed?
-
----
-
-### Why are they considered "old school"?
+## Solution one - nested callbacks
 
 ---?image=assets/image/promise.jpg
 
-## Promises
-
----
-
-### When did they first appear?
-
----
-
-### How are they executed?
-
----
-
-### How are they better?
+## Solution two - promises
 
 ---?image=assets/image/generator.jpg
 
-## Generators
-
----
-
-### When did they first appear?
-
----
-
-### How are they executed?
-
----
-
-### What are they good for?
+## Solution three - generator functions
 
 ---?image=assets/image/wait.jpg
 
-## Async/await
+## Solution four - async/await
 
----
+---?image=assets/image/information.jpg
 
-### When did they first appear?
-
----
-
-### What is the benefit?
-
----
+## More information
