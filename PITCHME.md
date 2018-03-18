@@ -23,8 +23,14 @@
 
 ```javascript
 const random = Math.random();
-const low = Math.floor(random); // waits for line 1 to return
-const high = Math.ceil(random); // waits for line 2 to return
+
+// waits for line 1 to return
+
+const low = Math.floor(random);
+
+// waits for line 2 to return
+
+const high = Math.ceil(random);
 ```
 
 ---
@@ -52,6 +58,31 @@ const callback = () => {
 
 setTimeout(callback, 10000);
 ```
+
+---
+
+* Some functions take an unpredictable amount of time to execute e.g. network requests
+* Can enter the stack at any time
+* Non-blocking (do not block single execution thread)
+
+---
+
+> Scenario: You are in a restaurant with many other people. You order your food. Other people can also order their food, they don't have to wait for your food to be cooked and served to you before they can order. In the kitchen restaurant workers are continuously cooking, serving, and taking orders. People will get their food served as soon as it is cooked. - [Stack Overflow](https://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean/26804844#26804844)
+
+---
+
+### However
+
+* Getting your order in before your neighbouring table does not guarantee your food will come first.
+
+---
+
+### How does this work?
+
+---
+
+* Imagine the bad friend you invite to your party: you can’t rely them to show up on time, so you start the party without them.
+* But what if your friend is bringing the drinks? We might have to wait!
 
 ---?image=assets/image/problem.jpg
 
