@@ -46,6 +46,7 @@ const high = Math.ceil(random);
 Note:
 
 * Usually takes around 10 microseconds to execute
+* Very bad for network requests, IO
 
 ---
 
@@ -73,6 +74,7 @@ setTimeout(callback, 10000);
 
 * Non-blocking (does not delay single execution thread)
 * Some functions take an unpredictable amount of time to execute e.g. network requests
+* Very good for network requests, IO
 
 ---
 
@@ -99,6 +101,10 @@ Note:
 
 ---
 
+![Event loop](https://youtu.be/8aGhZQkoFbQ?t=627)
+
+---
+
 ### Three main concepts
 
 * The call stack
@@ -114,12 +120,23 @@ Note:
 * Records where we are in our program
 * If we step into a function, we push something onto the stack. If we return from a function, we pop off the top of the stack.
 
+Note:
+
+* Think of 3 functions - push on x3, pop off x3
+* Think of a stack trace as the state of the call stack
+* Blowing the stack - calling the same function over and over again recursively - maximum call stack size exceeded
+
 --- 
 
 ### The callback queue
 
-* Keeps references to any callbacks that need to be processed
+* Receives callbacks to process from Web APIs e.g. setTimeout()
+* Keeps references to any callbacks that need to be processed in a queue
 * Event based - callbacks are added when actions complete
+
+Note: 
+
+* WebAPIs in browser, C++ APIs in Node.js
 
 ---
 
