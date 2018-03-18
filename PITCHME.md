@@ -78,16 +78,18 @@ setTimeout(callback, 10000);
 
 ### How does this work?
 
----
-
-### Another analogy
-
-* Imagine the bad friend you invite to your party: you can’t rely them to show up on time, so you start the party without them.
-* But what if your friend is bringing the drinks? We might have to wait!
-
 ---?image=assets/image/problem.jpg
 
 ## The problem
+
+---
+
+### Analogy
+
+* You are organising a birthday party for your wife.
+* You have a friend who is always late and you can’t rely them to show up on time.
+* So you start the party without them!
+* But what if your friend is bringing the drinks? We might have to wait before we can start!
 
 ---
 
@@ -105,7 +107,9 @@ setTimeout(() => console.log(3), 3000);
 
 ### Answer
 
-3 seconds
+#### 3 seconds
+
+The execution of these lines happens concurrently. We do not wait for 1 second before moving onto the next line etc
 
 ---
 
@@ -157,7 +161,7 @@ const timeout = (ms) => {
       resolve();
     }, ms);
   });
-});
+};
 
 timeout(1000)
   .then(() => {
@@ -177,7 +181,7 @@ timeout(1000)
 
 ---
 
-* A promise is a proxy for a value
+* A Promise is a proxy for a value
 * Essentially an object with a `.then()` method that takes a callback function
 * The callback fires when the Promise's `resolve()` function fires
 
@@ -218,7 +222,7 @@ const timeout = function* (ms) {
       resolve();
     }, ms);
   });
-});
+};
 
 yield timeout(1000);
 console.log(1);
@@ -232,7 +236,7 @@ console.log(3);
 
 ---
 
-* Part of the ES6 specification
+* Part of the ES2015 specification
 * First available in Node.js v0.12.18 (behind a runtime flag)
 * Can be used as an iterator function e.g.
 
@@ -247,7 +251,8 @@ const iterator = example();
 
 console.log(iterator.next()); // {value: 1, done: false}
 console.log(iterator.next()); // {value: 2, done: false}
-console.log(iterator.next()); // {value: 3, done: true}
+console.log(iterator.next()); // {value: 3, done: false}
+console.log(iterator.next()); // {value: undefined, done: true}
 ```
 
 ---
@@ -274,6 +279,40 @@ try {
 
 ## Solution four - Async/await
 
+---
+
+```javascript
+const timeout = function* (ms) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, ms);
+  });
+};
+
+const timer = async () => {
+  await timeout(1000);
+  console.log(1);
+
+  await timeout(2000);
+  console.log(2);
+
+  await timeout(3000);
+  console.log(3);
+};
+
+timer();
+```
+
+---
+
+* Part of the ES2017 specification
+* First available in Node.js v7.6
+* Supported by all major browsers *excluding* Internet Explorer Edge
+
 ---?image=assets/image/information.jpg
 
 ## More information
+
+* [JavaScript: The Good Parts by Douglas Crockford](https://www.amazon.co.uk/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?ie=UTF8&qid=1521391685&sr=8-1&keywords=douglas+crockford)
+* https://gitpitch.com/kslat3r/async-js-old-and-new
