@@ -177,7 +177,7 @@ timeout(1000)
 
 ---
 
-* A prmise is a proxy for a value
+* A promise is a proxy for a value
 * Essentially an object with a `.then()` method that takes a callback function
 * The callback fires when the Promise's `resolve()` function fires
 
@@ -197,6 +197,8 @@ timeout(1000)
 * Allows you to view your callbacks in a more friendly way
 * Lots of other useful methods including Promise.all()
 * Huge ecosystem of libraries e.g. `bluebird`
+
+---
 
 ### However
 
