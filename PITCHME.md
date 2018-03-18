@@ -108,6 +108,8 @@ setTimeout(callback, 10000);
   * Processing all items on the call stack
   * When the call stack is empty, processing all items on the callback queue
 
+---
+
 ![Event loop](assets/image/eventloop.png)
 
 ---?image=assets/image/problem.jpg
