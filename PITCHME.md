@@ -92,7 +92,9 @@ setTimeout(callback, 10000);
 
 ---
 
-### How long will this take to execute from start to finish?
+### Question
+
+How long will this code take to execute from start to finish?
 
 ```javascript
 setTimeout(() => console.log(1), 1000);
@@ -102,7 +104,9 @@ setTimeout(() => console.log(3), 3000);
 
 ---
 
-### 3 seconds
+### Answer
+
+3 seconds
 
 ---
 
