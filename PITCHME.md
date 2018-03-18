@@ -101,10 +101,6 @@ Note:
 
 ---
 
-![Event loop](https://www.youtube.com/embed/8aGhZQkoFbQ?start=625)
-
----
-
 ### Three main concepts
 
 * The call stack
@@ -156,6 +152,10 @@ Note:
 ---
 
 ![Event loop](assets/image/eventloop.png)
+
+---
+
+![Event loop](https://www.youtube.com/embed/8aGhZQkoFbQ?start=625)
 
 ---?image=assets/image/problem.jpg
 
