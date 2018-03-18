@@ -315,6 +315,7 @@ console.log(3);
 * Part of the ES2015 specification
 * First available in Node.js v0.12.18 (behind a runtime flag)
 * Can be used as an iterator function
+* **Syntactical sugar**
 
 Note:
 
@@ -392,6 +393,7 @@ timer();
 * Part of the ES2017 specification
 * First available in Node.js v7.6
 * Supported by all major browsers **excluding** Internet Explorer Edge
+* * **Syntactical sugar**
 
 ---?image=assets/image/information.jpg
 
