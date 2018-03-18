@@ -43,6 +43,10 @@
 
 ## Callbacks
 
+---
+
+### Simple example
+
 ```javascript
 const callback = () => {
   console.log('Hello, world!');
@@ -50,6 +54,10 @@ const callback = () => {
 
 setTimeout(callback, 10000);
 ```
+
+---
+
+### Node.js example
 
 ```javascript
 fs.readFile('/tmp/foo.txt', (err, data) => {
@@ -60,6 +68,10 @@ fs.readFile('/tmp/foo.txt', (err, data) => {
   console.log(data);
 });
 ```
+
+---
+
+### Loopback example
 
 ```javascript
 module.exports = (Model) => {
