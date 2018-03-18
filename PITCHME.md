@@ -35,8 +35,8 @@ const high = Math.ceil(random);
 ---
 
 * Execution happens in order, one at a time
-* Executed immediately by the event loop
-* Blocking functions (JavaScript is single threaded)
+* Pushed to the call stack immediately and executed
+* Blocking (JavaScript is single threaded)
 * Default behaviour
 * Happens very quickly on modern hardware
 
@@ -121,11 +121,9 @@ setTimeout(callback, 10000);
 
 ---
 
-### Analogy
-
 * You are organising a birthday party for your wife.
-* You have a friend who is always late and you can’t rely them to show up on time.
-* So you start the party without them!
+* You have a friend who is always late and you can’t rely on them to show up on time.
+* **So you start the party without them!**
 * But what if your friend is bringing the drinks? We might have to wait before we can start!
 
 ---
@@ -275,7 +273,9 @@ console.log(3);
 
 * Part of the ES2015 specification
 * First available in Node.js v0.12.18 (behind a runtime flag)
-* Can be used as an iterator function e.g.
+* Can be used as an iterator function
+
+---
 
 ```javascript
 const example = function* () {
@@ -345,7 +345,7 @@ timer();
 
 * Part of the ES2017 specification
 * First available in Node.js v7.6
-* Supported by all major browsers *excluding* Internet Explorer Edge
+* Supported by all major browsers **excluding** Internet Explorer Edge
 
 ---?image=assets/image/information.jpg
 
@@ -354,4 +354,4 @@ timer();
 * [Event loop explaination](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
 * [Event loop demonstration](http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D)
 * [JavaScript: The Good Parts by Douglas Crockford](https://www.amazon.co.uk/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?ie=UTF8&qid=1521391685&sr=8-1&keywords=douglas+crockford)
-* https://gitpitch.com/kslat3r/async-js-old-and-new
+* [Slides](https://gitpitch.com/kslat3r/async-js-old-and-new)
