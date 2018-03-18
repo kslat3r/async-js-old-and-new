@@ -209,6 +209,67 @@ timeout(1000)
 
 ## Solution three - Generator functions
 
+---
+
+```javascript
+const timeout = function* (ms) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, ms);
+  });
+});
+
+yield timeout(1000);
+console.log(1);
+
+yield timeout(2000);
+console.log(2);
+
+yield timeout(3000);
+console.log(3);
+``` 
+
+---
+
+* Part of the ES6 specification
+* First available in Node.js v0.12.18 (behind a runtime flag)
+* Can be used as an iterator function e.g.
+
+```javascript
+const example = function* () {
+  yield 1;
+  yield 2;
+  yield 3;
+};
+
+const iterator = example();
+
+console.log(iterator.next()); // {value: 1, done: false}
+console.log(iterator.next()); // {value: 2, done: false}
+console.log(iterator.next()); // {value: 3, done: true}
+```
+
+---
+
+### Try/catch
+
+```javascript
+const timeout = function* (ms) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject('Example error');
+    }, ms);
+  });
+});
+
+try {
+  yield timeout(10000);
+} catch (e) {
+  console.log(e);
+}
+```
+
 ---?image=assets/image/wait.jpg
 
 ## Solution four - Async/await
