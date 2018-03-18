@@ -51,6 +51,31 @@ const callback = () => {
 setTimeout(callback, 10000);
 ```
 
+```javascript
+fs.readFile('/tmp/foo.txt', (err, data) => {
+  if (err) {
+    throw err;
+  }
+
+  console.log(data);
+});
+```
+
+```javascript
+module.exports = (Model) => {
+  Model.helloWorld = (callback) => {
+    return callback(null, 'Hello, world!');
+  };
+
+  Model.remoteMethod('helloWorld', {
+    returns: {
+      arg: 'message',
+      type: 'string'
+    }
+  });
+};
+```
+
 ---
 
 ### When did they first appear?
