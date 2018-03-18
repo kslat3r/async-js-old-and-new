@@ -157,6 +157,10 @@ Note:
 
 ![Event loop](https://www.youtube.com/embed/8aGhZQkoFbQ?start=625)
 
+Note:
+
+* Watch until end of deferring until stack is clear section 16:20
+
 ---?image=assets/image/problem.jpg
 
 ## The problem
