@@ -5,8 +5,9 @@
 ### March 20th 2018
 
 Note:
-Discussion rather than presentation
-Ask questions at any time
+
+* Discussion rather than presentation
+* Ask questions at any time
 
 ---
 
@@ -19,7 +20,8 @@ Ask questions at any time
 * Async/await
 
 Note:
-But, counter-intuitively, we are going to start with
+
+* But, counter-intuitively, we are going to start with
 
 ---?image=assets/image/queue.jpg
 
@@ -42,16 +44,16 @@ const high = Math.ceil(random);
 * Happens very quickly on modern hardware
 
 Note:
-Give indicator of timings on modern hardware
+
+* * Usually takes around 10 microseconds to execute
 
 ---
 
 > Scenario: You are in a queue to get a movie ticket. You cannot get one until everybody in front of you gets one, and the same applies to the people queued behind you. - [Stack Overflow](https://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean/26804844#26804844)
 
 Note:
-Another scenario - My boss is a busy man. He tells me to write the code. I tell him: Fine. I get started and he's watching me like a vulture, standing behind me, off my shoulder. I'm like "Dude, WTF: why don't you go and do something while I finish this?"
 
-he's like: "No, I'm waiting right here until you finish." This is synchronous.
+* Another scenario - My boss is a busy man. He tells me to write the code. I tell him: Fine. I get started and he's watching me like a vulture, standing behind me, off my shoulder. I'm like "Dude, WTF: why don't you go and do something while I finish this?" He's like: "No, I'm waiting right here until you finish." This is synchronous.
 
 ---?image=assets/image/cable.jpg
 
@@ -77,9 +79,9 @@ setTimeout(callback, 10000);
 > Scenario: You are in a restaurant with many other people. You order your food. Other people can also order their food, they don't have to wait for your food to be cooked and served to you before they can order. In the kitchen restaurant workers are continuously cooking, serving, and taking orders. People will get their food served as soon as it is cooked. - [Stack Overflow](https://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean/26804844#26804844)
 
 Note:
-Another scenario - The boss tells me to do it, and rather than waiting right there for my work, the boss goes off and does other tasks. When I finish my job I simply report to my boss and say: "I'm DONE!" This is Asynchronous Execution.
 
-This is clearly also much more efficient!
+* Another scenario - The boss tells me to do it, and rather than waiting right there for my work, the boss goes off and does other tasks. When I finish my job I simply report to my boss and say: "I'm DONE!" This is Asynchronous Execution.
+* This is clearly also much more efficient!
 
 ---
 
@@ -88,9 +90,8 @@ This is clearly also much more efficient!
 * Getting your order in before your neighbouring table does not guarantee your food will come first.
 
 Note:
-For example your food might take longer to cook.
-
-Give real world example about network requests
+* For example your food might take longer to cook.
+* Network requests are a good real-world example of this
 
 ---
 
@@ -131,7 +132,8 @@ Give real world example about network requests
 * Performs this repeatedly until the call stack and callback queue are empty.
 
 Note:
-http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D
+
+* [Example](http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D)
 
 ---
 
@@ -174,7 +176,8 @@ The execution of these lines happens concurrently. The JavaScript interpretor do
 * But what if we want to start our timers one after another?
 
 Note:
-Give timing note
+
+* Usually takes around 10 microseconds to execute
 
 ---?image=assets/image/telephone.jpg
 
@@ -203,7 +206,8 @@ setTimeout(() => {
 * Hard to maintain.
 
 Note:
-Can you imagine if we were making 100s of network requests using this method?
+
+* Can you imagine if we were making 100s of network requests using this method?
 
 ---
 
@@ -212,7 +216,8 @@ Can you imagine if we were making 100s of network requests using this method?
 ![Callback hell](assets/image/callbackhell.png)
 
 Note:
-Tell story about father installing Doom 2 on 486.
+
+* Tell story about installing Doom 2 on 486.
 
 ---?image=assets/image/promise.jpg
 
@@ -252,7 +257,8 @@ timeout(1000)
 * The callback fires when the Promise's `resolve()` function fires
 
 Note:
-Talk about catch and finally (not yet within core)
+
+* Talk about catch and finally (not yet within core)
 
 --- 
 
@@ -310,10 +316,9 @@ console.log(3);
 * Can be used as an iterator function
 
 Note:
-Mention how in the real world this wouldn't work without co() as yield has to be within a generator function
-TJ Holowaychuk
 
-Good use case for this is paging
+* Mention how in the real world this wouldn't work without co() as yield has to be within a generator function (TJ Holowaychuk)
+* Good use case for this is paging
 
 ---
 
