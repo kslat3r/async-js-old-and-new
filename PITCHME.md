@@ -101,7 +101,7 @@ Note:
 
 ---
 
-![Event loop](https://youtu.be/8aGhZQkoFbQ?t=627)
+![Event loop](https://youtu.be/embed/8aGhZQkoFbQ?t=627)
 
 ---
 
