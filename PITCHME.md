@@ -146,7 +146,7 @@ setTimeout(() => {
 
 ---?image=assets/image/promise.jpg
 
-## Solution two - promises
+## Solution two - Promises
 
 ---
 
@@ -155,7 +155,7 @@ const timeout = (ms) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve();
-    });
+    }, ms);
   });
 });
 
@@ -175,13 +175,41 @@ timeout(1000)
   });
 ```
 
+---
+
+* A prmise is a proxy for a value
+* Essentially an object with a `.then()` method that takes a callback function
+* The callback fires when the Promise's `resolve()` function fires
+
+--- 
+
+### Promise chaining
+
+```javascript
+  timeout(1000)
+    .then(timeout(2000))
+    .then(timeout(3000))
+    .then(...
+```
+
+---
+
+* Allows you to view your callbacks in a more friendly way
+* Lots of other useful methods including Promise.all()
+* Huge ecosystem of libraries e.g. `bluebird`
+
+### However
+
+* Still susceptible to callback hell
+* Lots of boilerplate `.then()`, `.catch()` and `.finally()` code
+
 ---?image=assets/image/generator.jpg
 
-## Solution three - generator functions
+## Solution three - Generator functions
 
 ---?image=assets/image/wait.jpg
 
-## Solution four - async/await
+## Solution four - Async/await
 
 ---?image=assets/image/information.jpg
 
