@@ -427,6 +427,6 @@ timer();
 ---?image=assets/image/information.jpg
 
 * JavaScript: The Good Party by Douglas Crockford - [https://www.amazon.co.uk/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?ie=UTF8&qid=1521391685&sr=8-1&keywords=douglas+crockford](https://www.amazon.co.uk/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?ie=UTF8&qid=1521391685&sr=8-1&keywords=douglas+crockford)
-* Slides - [https://gitpitch.com/kslat3r/async-js-old-and-new](https://gitpitch.com/kslat3r/async-js-old-and-new)
+* Slides - [https://github.com/kslat3r/async-js-old-and-new](https://gitpitch.com/kslat3r/async-js-old-and-new)
 
 ---
