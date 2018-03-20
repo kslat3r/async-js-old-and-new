@@ -420,8 +420,8 @@ timer();
 
 ## More information
 
-* [Event loop explaination](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
-* [Event loop demonstration](http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D)
-* [What the heck is the event loop anyway?](http://latentflip.com/what-is-the-event-loop-anyway)
-* [JavaScript: The Good Parts by Douglas Crockford](https://www.amazon.co.uk/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?ie=UTF8&qid=1521391685&sr=8-1&keywords=douglas+crockford)
-* [Slides](https://gitpitch.com/kslat3r/async-js-old-and-new)
+* Event loop explanation - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
+* Event loop demonstration - [http://latentflip.com/loupe/](http://latentflip.com/loupe/)
+* What the heck is the event loop anyway? - [http://latentflip.com/what-is-the-event-loop-anyway](http://latentflip.com/what-is-the-event-loop-anyway)
+* JavaScript: The Good Party by Douglas Crockford - [https://www.amazon.co.uk/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?ie=UTF8&qid=1521391685&sr=8-1&keywords=douglas+crockford](https://www.amazon.co.uk/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1?ie=UTF8&qid=1521391685&sr=8-1&keywords=douglas+crockford)
+* Slides - [https://gitpitch.com/kslat3r/async-js-old-and-new](https://gitpitch.com/kslat3r/async-js-old-and-new)
