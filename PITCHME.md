@@ -387,7 +387,7 @@ try {
 ---
 
 ```javascript
-const timeout = function* (ms) {
+const timeout = function (ms) {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve();
